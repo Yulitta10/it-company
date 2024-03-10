@@ -1,0 +1,25 @@
+
+<mat-sidenav-container [hasBackdrop]="true">
+  <mat-sidenav #sidenav [mode]="'over'" [position]="'start'">
+    <p>Hello</p>
+  </mat-sidenav>
+  
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <div class="social-networks">
+        <button mat-raised-button (click)="onInstagram()">
+          <span>Instagram</span>
+        </button>
+        <button mat-raised-button (click)="onLinkedin()">
+          <span>Linkedin</span>
+        </button>
+      </div>
+    </mat-toolbar>
+    <div class="conten">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

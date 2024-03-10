@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@import './theme.scss';
+
+html, body { height: 100%; }
+
+html {
+    overflow: hidden;
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+mat-sidenav-content {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
