@@ -1,0 +1,30 @@
+:host {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: rgba($color: #fff, $alpha: 0.8);
+    flex-direction: column;
+    gap: 14px;
+}
+
+button.mat-mdc-raised-button {
+    background-color: rgba($color: #000, $alpha: 0.6);
+    height: 50px;
+    width: 140px;
+    color: #fff;
+}
+
+.second-level-text {
+    font-size: 30px;
+}
+
+.first-level-text {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.third-level-text {
+    font-size: 24px;
+}

@@ -1,0 +1,89 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: hidden;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.title {
+    color: #EEEEEE;
+}
+
+.about-us {
+    display: flex;
+    flex: 1;
+    color: #EEEEEE;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.carousel,
+img {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.carousel {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+
+    .button-container {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        z-index: 2;
+        width: 100%;
+    }
+
+    button {
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        color: #fff;
+    }
+}
+
+.btn-container {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+
+    button {
+        background-color: #EEEEEE;
+        color: #31363F;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .carousel,
+    img {
+        max-width: 300px;
+        max-height: 150px;
+    }
+}

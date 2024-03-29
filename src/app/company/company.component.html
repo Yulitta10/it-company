@@ -1,0 +1,34 @@
+<div class="title">
+    <h1>About company</h1>
+</div>
+
+<div class="content">
+    <div class="about-us">
+        We are a cutting-edge IT company that specializes in providing innovative solutions for businesses of all sizes.
+        Our
+        team of experienced professionals excels in developing custom software, designing mobile applications, and
+        implementing cloud computing systems. We are dedicated to helping our clients improve efficiency, productivity,
+        and
+        profitability through technology. With a focus on delivering superior customer service and tailoring our
+        solutions
+        to meet the unique needs of each client, we are committed to being a trusted partner in the digital
+        transformation
+        journey. Let us help take your business to the next level with our expertise in IT solutions.
+    </div>
+
+    <div class="carousel">
+        <img [src]="images[currentIndex]" alt="Carousel Image">
+        <div class="button-container">
+            <button class="back" mat-icon-button (click)="showPrevious()">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+            </button>
+            <button class="next" mat-icon-button (click)="showNext()">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="btn-container">
+    <button mat-raised-button (click)="navigate()">Next</button>
+</div>

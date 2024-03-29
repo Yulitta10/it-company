@@ -1,9 +1,8 @@
-
 <mat-sidenav-container [hasBackdrop]="true">
   <mat-sidenav #sidenav [mode]="'over'" [position]="'start'">
     <p>Hello</p>
   </mat-sidenav>
-  
+
   <mat-sidenav-content>
     <mat-toolbar>
       <button mat-icon-button (click)="sidenav.toggle()">
@@ -18,7 +17,7 @@
         </button>
       </div>
     </mat-toolbar>
-    <div class="conten">
+    <div class="content">
       <router-outlet></router-outlet>
     </div>
   </mat-sidenav-content>

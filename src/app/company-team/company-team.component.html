@@ -1,0 +1,22 @@
+<div class="title">
+    <h1>Team</h1>
+</div>
+
+<div class="search">
+    <mat-form-field appearance="fill">
+        <mat-label>Search</mat-label>
+        <input matInput>
+        <button color="primary" matSuffix mat-icon-button aria-label="Clear">
+        </button>
+    </mat-form-field>
+</div>
+
+<div class="content">
+    <div *ngFor="let item of items" class="card">
+        <img [src]="item.imageUrl" [alt]="item.name">
+        <div class="crad-description">
+            <span>{{ item.position }}</span>
+            <span>{{ item.name }}</span>
+        </div>
+    </div>
+</div>
