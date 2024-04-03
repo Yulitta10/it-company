@@ -44,3 +44,9 @@ mat-sidenav-content {
     display: flex;
     flex: 1;
 }
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
