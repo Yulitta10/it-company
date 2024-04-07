@@ -5,6 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-company-team',
@@ -14,6 +15,8 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    RouterOutlet,
+    RouterModule,
     MatButtonModule,
     MatIconModule,
     ReactiveFormsModule,

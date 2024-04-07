@@ -49,4 +49,16 @@ mat-sidenav-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
+
+    .label {
+        font-size: 24px;
+        font-weight: 600;
+        color: rgba($color: #000, $alpha: 0.6);
+    }
+
+    button {
+        background-color: rgba($color: #000, $alpha: 0.6);
+        color: #EEEEEE;
+    }
 }

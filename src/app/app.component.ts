@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -10,6 +10,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   standalone: true,
   imports: [
     RouterOutlet,
+    RouterModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
@@ -29,17 +30,5 @@ export class AppComponent {
 
   onLinkedin(): void {
     window.location.href = 'https://ru.linkedin.com/';
-  }
-
-  onStartPage() {
-    window.location.href = 'https://www.instagram.com';
-  }
-
-  onGoToTeamInfo() {
-    window.location.href = 'https://www.instagram.com';
-  }
-
-  onGoToCompanyInfo() {
-    window.location.href = 'https://www.instagram.com';
   }
 }

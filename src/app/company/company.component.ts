@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-company',
   standalone: true,
-  imports: [MatButtonModule, MatIconModule],
+  imports: [MatButtonModule, MatIconModule, RouterModule, RouterOutlet],
   templateUrl: './company.component.html',
   styleUrl: './company.component.scss',
 })
@@ -26,9 +27,5 @@ export class CompanyComponent {
   showPrevious() {
     this.currentIndex =
       (this.currentIndex - 1 + this.images.length) % this.images.length;
-  }
-
-  navigate() {
-    window.location.href = 'http://localhost:4200/team';
   }
 }

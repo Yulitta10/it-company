@@ -1,13 +1,14 @@
 <mat-sidenav-container [hasBackdrop]="true">
   <mat-sidenav #sidenav [mode]="'over'" [position]="'start'">
     <div class="content-container">
-      <button mat-raised-button (click)="onGoToCompanyInfo()">
+      <span class="label">Pages</span>
+      <button mat-raised-button routerLink="/company" (click)="sidenav.toggle()">
         <span>About Company</span>
       </button>
-      <button mat-raised-button (click)="onGoToTeamInfo()">
+      <button mat-raised-button routerLink="/team" (click)="sidenav.toggle()">
         <span>Team</span>
       </button>
-      <button mat-raised-button (click)="onLinkedin()">
+      <button mat-raised-button routerLink="/" (click)="sidenav.toggle()">
         <span>Get Started</span>
       </button>
     </div>
